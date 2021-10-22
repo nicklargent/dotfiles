@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES=".vimrc .tmux.conf .gitconfig"
+FILES=".vimrc .tmux.conf .gitconfig .bash_prompt"
 SRC=$PWD
 
 cd ~
