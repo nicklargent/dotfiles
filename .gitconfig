@@ -3,3 +3,5 @@
 	email = nicklargent@gmail.com
 
 
+[pull]
+	rebase = false
