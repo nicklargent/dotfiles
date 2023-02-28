@@ -4,5 +4,5 @@ git_branch() {
 #export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \[\033[01;33m\]\$(git_branch)\[\033[00m\]\n\$ "
 
 #export PS1="\n\[\e[92m\e[40m\]\u\[\e[m\]\[\e[92m\]@\[\e[m\]\[\e[92m\]\h\[\e[m\] \[\e[95m\]WSL\[\e[m\] \[\e[36m\]\w\[\e[m\] \[\e[97m\]\`git_branch\`\[\e[m\]\n\\$ "
-export PS1="\n\[\e[92m\e[48;5;0m\]\u@\h \[\e[36m\]\w \[\e[95m\]\`git_branch\`\[\e[m\]\n\\$ "
-
+#export PS1="\n\[\e[92m\e[48;5;0m\]\u@\h \[\e[36m\]\w \[\e[95m\]\`git_branch\`\[\e[m\]\n\\$ "
+export PS1="\n\[\e[92m\]\u@\h \[\e[36m\]\w \[\e[95m\]\`git_branch\`\[\e[m\]\n\\$ "
