@@ -75,3 +75,4 @@ set tabstop=4
 set ai "Auto indent
 set si "Smart indent
 
+silent! source ~/.vimrc.$HOSTNAME
