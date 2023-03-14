@@ -25,6 +25,11 @@ set novisualbell
 
 " Show line numbers
 set number
+set relativenumber
+set cursorline
+
+" Enable this for powerline
+set laststatus=2
 
 
 
@@ -37,6 +42,7 @@ syntax on
 "set term=builtin_ansi
 
 colorscheme desert
+hi EndOfBuffer guibg=black "for fixing desert theme
 
 "set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -68,6 +74,4 @@ set tabstop=4
 
 set ai "Auto indent
 set si "Smart indent
-
-
 
