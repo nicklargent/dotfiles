@@ -17,19 +17,22 @@ set hlsearch
 set incsearch
 
 " Show matching brackets when text indicator is over them
-set showmatch
+"set showmatch
 
 " No annoying sound on errors
 set noerrorbells
 set novisualbell
 
 " Show line numbers
-set number
+" set number
 set relativenumber
-set cursorline
+" set cursorline
 
 " Enable this for powerline
 set laststatus=2
+
+" Remap keys
+inoremap jk <ESC>
 
 
 
