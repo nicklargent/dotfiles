@@ -1,0 +1,7 @@
+[user]
+	name = Nick Largent
+	email = nicklargent@gmail.com
+
+
+[pull]
+	rebase = true

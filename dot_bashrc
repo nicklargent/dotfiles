@@ -1,0 +1,10 @@
+alias e='gnome-text-editor'
+
+export PF_INFO="ascii title os host kernel uptime memory"
+export EDITOR="vim"
+
+pfetch
+
+#source ~/.bash_prompt
+eval "$(starship init bash)"
+eval "$(zoxide init --cmd cd bash)"
