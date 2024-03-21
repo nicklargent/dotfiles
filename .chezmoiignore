@@ -1,2 +1,7 @@
 install.sh
 README.md
+
+{{if (.chezmoi.kernel.osrelease | lower | contains "wsl2") }}
+.config/hypr
+{{end}}
+

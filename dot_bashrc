@@ -10,8 +10,15 @@ alias e='gnome-text-editor'
 export PF_INFO="ascii title os host kernel uptime memory"
 export EDITOR="vim"
 
-pfetch
+## Show system info
+type pfetch >/dev/null 2>&1 && pfetch
 
-#source ~/.bash_prompt
-eval "$(starship init bash)"
-eval "$(zoxide init --cmd cd bash)"
+## Configure custom prompt
+if type starship >/dev/null 2>&1; then
+	eval "$(starship init bash)"
+else
+	source ~/.bash_prompt
+fi
+
+## Better cd command
+type zoxide >/dev/null 2>&1 && eval "$(zoxide init --cmd cd bash)"
