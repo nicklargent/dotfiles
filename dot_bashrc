@@ -7,6 +7,7 @@ alias sc='systemctl'
 alias tm='tmux new-session -A -s main'
 alias e='gnome-text-editor'
 alias lsblk='lsblk -o NAME,LABEL,SIZE,TYPE,MOUNTPOINTS,UUID'
+alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
 
 export PF_INFO="ascii title os host kernel uptime memory"
 export EDITOR="vim"
