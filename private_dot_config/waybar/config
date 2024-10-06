@@ -6,9 +6,19 @@
 	//"output": "DP-2", //"HDMI-A-1",
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["idle_inhibitor", "tray", "clock"],
+    "modules-right": ["idle_inhibitor", "pulseaudio", "tray", "clock"],
 	"hyprland/workspaces": {
-		//"format": "{id} {windows}"
+	    "format": "{icon} {windows} ",
+	    "format-window-separator": " ",
+	    "window-rewrite-default": "󰘔",
+	    "window-rewrite": {
+	        "title<.*youtube.*>": "",
+	        "class<firefox>": "",
+	        "class<firefox> title<.*github.*>": "",
+	        "kitty": "",
+	        "dolphin": "\udb82\udeb6",
+	        "code": "󰨞",
+	    }
 	},
 	"hyprland/window": {
 		"separate-outputs": true
@@ -20,6 +30,9 @@
             "deactivated": ""
         }
     },
+    "pulseaudio": {
+		"format": "{volume}% "
+	},
     "tray": {
         // "icon-size": 21,
         "spacing": 10
