@@ -7,7 +7,9 @@ alias sc='systemctl'
 alias tm='tmux new-session -A -s main'
 alias e='gnome-text-editor'
 alias lsblk='lsblk -o NAME,LABEL,SIZE,TYPE,MOUNTPOINTS,UUID'
-alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+	alias code='code --ozone-platform=wayland'
+fi
 if type nvim >/dev/null 2>&1; then
 	alias vi='nvim'
 fi
